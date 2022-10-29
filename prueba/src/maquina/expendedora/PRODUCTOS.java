@@ -4,105 +4,108 @@
  * and open the template in the editor.
  */
 package maquina.expendedora;
+
 import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
-
 
 /**
  *
  * @author Usuario
  */
+public class PRODUCTOS extends javax.swing.JFrame {
 
-    
-public class PRODUCTOS  extends  javax.swing.JFrame  {
- public  int PRECIOPRODUCTO;
- public  int INDENTIFICADORPRODUCTO;
+    public int PRECIOPRODUCTO;
+    public int INDENTIFICADORPRODUCTO;
+    public int TOTALPROD1;
+    public int TOTALPROD2;
+    public int TOTALPROD3;
+    public int TOTALPROD4;
+    public int TOTALPROD5;
+    public int TOTALPROD6;
+    public int TOTALPROD7;
+    public int TOTALPROD8;
+    public int TOTALPROD9;
+    public int TOTALPROD10;
+    public int TOTALPROD11;
+    public int TOTALPROD12;
 
-         public int sumatoria=0;
-        public  int sumatoriamonedas=0;
-        int auxiliar=0;
-          public int conver=0;
-          public int monedaauxiliar;
-         public  int contando;
-          public  int prod;
-      
-  //String  no1=(String)PRECIOS.getSelectedItem();
- 
- 
-    
+    public int sumatoria = 0;
+    public int sumatoriamonedas = 0;
+    int auxiliar = 0;
+    public int conver = 0;
+    public int monedaauxiliar;
+    public int contando;
+    public int prod;
+
+    //String  no1=(String)PRECIOS.getSelectedItem();
     public PRODUCTOS() {
-        
-        
+
         initComponents();
-            
-       
-                  
+
         ImageIcon imagen = new ImageIcon(getClass().getResource("/IMASH/MAQUINA.jpg"));
-                         imagen=new ImageIcon(imagen.getImage().getScaledInstance(ANUNCIOS.getWidth(), ANUNCIOS.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         ANUNCIOS.setIcon(imagen);
-                         
+        imagen = new ImageIcon(imagen.getImage().getScaledInstance(ANUNCIOS.getWidth(), ANUNCIOS.getHeight(), Image.SCALE_AREA_AVERAGING));
+        ANUNCIOS.setIcon(imagen);
+
         //producto 1
-                         ImageIcon imagen1 = new ImageIcon(getClass().getResource("/imgproductos/1,.PNG"));
-                         imagen1=new ImageIcon(imagen1.getImage().getScaledInstance(PROD.getWidth(), PROD.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         PROD.setIcon(imagen1);
-                         //producto2
-                         ImageIcon imagen2 = new ImageIcon(getClass().getResource("/imgproductos/2,.PNG"));
-                         imagen2=new ImageIcon(imagen2.getImage().getScaledInstance(PROD2.getWidth(), PROD2.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         PROD2.setIcon(imagen2);
-                         
+        ImageIcon imagen1 = new ImageIcon(getClass().getResource("/imgproductos/1,.PNG"));
+        imagen1 = new ImageIcon(imagen1.getImage().getScaledInstance(PROD.getWidth(), PROD.getHeight(), Image.SCALE_AREA_AVERAGING));
+        PROD.setIcon(imagen1);
+        //producto2
+        ImageIcon imagen2 = new ImageIcon(getClass().getResource("/imgproductos/2,.PNG"));
+        imagen2 = new ImageIcon(imagen2.getImage().getScaledInstance(PROD2.getWidth(), PROD2.getHeight(), Image.SCALE_AREA_AVERAGING));
+        PROD2.setIcon(imagen2);
+
 //                         //producto 3
-                         ImageIcon imagen3 = new ImageIcon(getClass().getResource("/imgproductos/3,.PNG"));
-                         imagen3=new ImageIcon(imagen3.getImage().getScaledInstance(PROD3.getWidth(), PROD3.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         PROD3.setIcon(imagen3);
-                         
+        ImageIcon imagen3 = new ImageIcon(getClass().getResource("/imgproductos/3,.PNG"));
+        imagen3 = new ImageIcon(imagen3.getImage().getScaledInstance(PROD3.getWidth(), PROD3.getHeight(), Image.SCALE_AREA_AVERAGING));
+        PROD3.setIcon(imagen3);
+
 //                       //  PRODUCTO 4
-                        ImageIcon imagen4 = new ImageIcon(getClass().getResource("/imgproductos/4,.PNG"));
-                         imagen4=new ImageIcon(imagen4.getImage().getScaledInstance(PROD4.getWidth(), PROD4.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         PROD4.setIcon(imagen4);
+        ImageIcon imagen4 = new ImageIcon(getClass().getResource("/imgproductos/4,.PNG"));
+        imagen4 = new ImageIcon(imagen4.getImage().getScaledInstance(PROD4.getWidth(), PROD4.getHeight(), Image.SCALE_AREA_AVERAGING));
+        PROD4.setIcon(imagen4);
 //                         //  PRODUCTO 5
-                         ImageIcon imagen5 = new ImageIcon(getClass().getResource("/imgproductos/5,.PNG"));
-                         imagen5=new ImageIcon(imagen5.getImage().getScaledInstance(PROD5.getWidth(), PROD5.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         PROD5.setIcon(imagen5);
+        ImageIcon imagen5 = new ImageIcon(getClass().getResource("/imgproductos/5,.PNG"));
+        imagen5 = new ImageIcon(imagen5.getImage().getScaledInstance(PROD5.getWidth(), PROD5.getHeight(), Image.SCALE_AREA_AVERAGING));
+        PROD5.setIcon(imagen5);
 //                         //  PRODUCTO 6
-                        ImageIcon imagen6 = new ImageIcon(getClass().getResource("/imgproductos/6,.PNG"));
-                         imagen6=new ImageIcon(imagen6.getImage().getScaledInstance(PROD4.getWidth(), PROD4.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         PROD6.setIcon(imagen6);
+        ImageIcon imagen6 = new ImageIcon(getClass().getResource("/imgproductos/6,.PNG"));
+        imagen6 = new ImageIcon(imagen6.getImage().getScaledInstance(PROD4.getWidth(), PROD4.getHeight(), Image.SCALE_AREA_AVERAGING));
+        PROD6.setIcon(imagen6);
 //                         //  PRODUCTO 7
-                        ImageIcon imagen7 = new ImageIcon(getClass().getResource("/imgproductos/7,.PNG"));
-                         imagen7=new ImageIcon(imagen7.getImage().getScaledInstance(PROD7.getWidth(), PROD7.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         PROD7.setIcon(imagen7);
+        ImageIcon imagen7 = new ImageIcon(getClass().getResource("/imgproductos/7,.PNG"));
+        imagen7 = new ImageIcon(imagen7.getImage().getScaledInstance(PROD7.getWidth(), PROD7.getHeight(), Image.SCALE_AREA_AVERAGING));
+        PROD7.setIcon(imagen7);
 //                          //  PRODUCTO 8
-                        ImageIcon imagen8 = new ImageIcon(getClass().getResource("/imgproductos/8,.PNG"));
-                         imagen8=new ImageIcon(imagen8.getImage().getScaledInstance(PROD8.getWidth(), PROD8.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         PROD8.setIcon(imagen8);
+        ImageIcon imagen8 = new ImageIcon(getClass().getResource("/imgproductos/8,.PNG"));
+        imagen8 = new ImageIcon(imagen8.getImage().getScaledInstance(PROD8.getWidth(), PROD8.getHeight(), Image.SCALE_AREA_AVERAGING));
+        PROD8.setIcon(imagen8);
 //                         
-                         ImageIcon imagen9 = new ImageIcon(getClass().getResource("/imgproductos/9,.PNG"));
-                         imagen9=new ImageIcon(imagen9.getImage().getScaledInstance(PROD9U.getWidth(), PROD9U.getHeight(), Image.SCALE_AREA_AVERAGING));
-                  PROD9U.setIcon(imagen9);
-                  
+        ImageIcon imagen9 = new ImageIcon(getClass().getResource("/imgproductos/9,.PNG"));
+        imagen9 = new ImageIcon(imagen9.getImage().getScaledInstance(PROD9U.getWidth(), PROD9U.getHeight(), Image.SCALE_AREA_AVERAGING));
+        PROD9U.setIcon(imagen9);
+
 //                         
-                         ImageIcon imagen10 = new ImageIcon(getClass().getResource("/imgproductos/10,.PNG"));
-                         imagen10=new ImageIcon(imagen10.getImage().getScaledInstance(PROD10U.getWidth(), PROD10U.getHeight(), Image.SCALE_AREA_AVERAGING));
-                  PROD10U.setIcon(imagen10);
-                  
+        ImageIcon imagen10 = new ImageIcon(getClass().getResource("/imgproductos/10,.PNG"));
+        imagen10 = new ImageIcon(imagen10.getImage().getScaledInstance(PROD10U.getWidth(), PROD10U.getHeight(), Image.SCALE_AREA_AVERAGING));
+        PROD10U.setIcon(imagen10);
+
 //                         
-                         ImageIcon imagen11 = new ImageIcon(getClass().getResource("/imgproductos/11,.PNG"));
-                         imagen11=new ImageIcon(imagen11.getImage().getScaledInstance(PROD11U.getWidth(), PROD11U.getHeight(), Image.SCALE_AREA_AVERAGING));
-                  PROD11U.setIcon(imagen11);
-   
+        ImageIcon imagen11 = new ImageIcon(getClass().getResource("/imgproductos/11,.PNG"));
+        imagen11 = new ImageIcon(imagen11.getImage().getScaledInstance(PROD11U.getWidth(), PROD11U.getHeight(), Image.SCALE_AREA_AVERAGING));
+        PROD11U.setIcon(imagen11);
+
 //                         
-                         ImageIcon imagen12 = new ImageIcon(getClass().getResource("/imgproductos/12,.PNG"));
-                         imagen12=new ImageIcon(imagen12.getImage().getScaledInstance(PROD12U.getWidth(), PROD12U.getHeight(), Image.SCALE_AREA_AVERAGING));
-                  PROD12U.setIcon(imagen12);
-                  
-                  
-                  
+        ImageIcon imagen12 = new ImageIcon(getClass().getResource("/imgproductos/12,.PNG"));
+        imagen12 = new ImageIcon(imagen12.getImage().getScaledInstance(PROD12U.getWidth(), PROD12U.getHeight(), Image.SCALE_AREA_AVERAGING));
+        PROD12U.setIcon(imagen12);
+
 //                  
-           ImageIcon automataa = new ImageIcon(getClass().getResource("/automas/q1.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);
-                        
+        ImageIcon automataa = new ImageIcon(getClass().getResource("/automas/q1.JPG"));
+        automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+        AUTOMATA.setIcon(automataa);
+
     }
 
     /**
@@ -127,6 +130,18 @@ public class PRODUCTOS  extends  javax.swing.JFrame  {
         MONEDA = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
+        precio = new javax.swing.JLabel();
+        precio2 = new javax.swing.JLabel();
+        precio3 = new javax.swing.JLabel();
+        precio4 = new javax.swing.JLabel();
+        precio5 = new javax.swing.JLabel();
+        precio6 = new javax.swing.JLabel();
+        precio7 = new javax.swing.JLabel();
+        precio8 = new javax.swing.JLabel();
+        precio9 = new javax.swing.JLabel();
+        precio10 = new javax.swing.JLabel();
+        precio11 = new javax.swing.JLabel();
+        precio12 = new javax.swing.JLabel();
         AUTOMATA = new javax.swing.JLabel();
         PROD = new javax.swing.JLabel();
         PROD3 = new javax.swing.JLabel();
@@ -141,7 +156,6 @@ public class PRODUCTOS  extends  javax.swing.JFrame  {
         PROD9U = new javax.swing.JLabel();
         Q5 = new javax.swing.JLabel();
         Q11 = new javax.swing.JLabel();
-        Q12 = new javax.swing.JLabel();
         Q13 = new javax.swing.JLabel();
         Q14 = new javax.swing.JLabel();
         Q15 = new javax.swing.JLabel();
@@ -237,6 +251,66 @@ public class PRODUCTOS  extends  javax.swing.JFrame  {
         jLabel13.setText("SELECCIONA EL PRODUCTO QUE DESEES OBTENER");
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 760, 20));
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 270, -1, -1));
+
+        precio.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        precio.setForeground(new java.awt.Color(255, 51, 51));
+        precio.setText("10");
+        getContentPane().add(precio, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, 40, -1));
+
+        precio2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        precio2.setForeground(new java.awt.Color(255, 0, 0));
+        precio2.setText("10");
+        getContentPane().add(precio2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 160, 30, -1));
+
+        precio3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        precio3.setForeground(new java.awt.Color(255, 0, 0));
+        precio3.setText("10");
+        getContentPane().add(precio3, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 160, -1, -1));
+
+        precio4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        precio4.setForeground(new java.awt.Color(255, 0, 0));
+        precio4.setText("10");
+        getContentPane().add(precio4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 300, -1, -1));
+
+        precio5.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        precio5.setForeground(new java.awt.Color(255, 0, 0));
+        precio5.setText("10");
+        getContentPane().add(precio5, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 300, -1, -1));
+
+        precio6.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        precio6.setForeground(new java.awt.Color(255, 0, 0));
+        precio6.setText("10");
+        getContentPane().add(precio6, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 300, -1, -1));
+
+        precio7.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        precio7.setForeground(new java.awt.Color(255, 0, 0));
+        precio7.setText("10");
+        getContentPane().add(precio7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 460, -1, -1));
+
+        precio8.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        precio8.setForeground(new java.awt.Color(255, 0, 0));
+        precio8.setText("10");
+        getContentPane().add(precio8, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 460, -1, -1));
+
+        precio9.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        precio9.setForeground(new java.awt.Color(255, 0, 0));
+        precio9.setText("10");
+        getContentPane().add(precio9, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 460, -1, -1));
+
+        precio10.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        precio10.setForeground(new java.awt.Color(255, 0, 0));
+        precio10.setText("10");
+        getContentPane().add(precio10, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 620, -1, -1));
+
+        precio11.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        precio11.setForeground(new java.awt.Color(255, 0, 0));
+        precio11.setText("10");
+        getContentPane().add(precio11, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 620, -1, -1));
+
+        precio12.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        precio12.setForeground(new java.awt.Color(255, 0, 0));
+        precio12.setText("10");
+        getContentPane().add(precio12, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 620, 30, -1));
         getContentPane().add(AUTOMATA, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 10, 1010, 900));
 
         PROD.setText("1");
@@ -353,12 +427,6 @@ public class PRODUCTOS  extends  javax.swing.JFrame  {
         Q11.setText("Q.5");
         getContentPane().add(Q11, new org.netbeans.lib.awtextra.AbsoluteConstraints(291, 180, 50, 20));
 
-        Q12.setBackground(new java.awt.Color(102, 102, 102));
-        Q12.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 2, 24)); // NOI18N
-        Q12.setForeground(new java.awt.Color(255, 255, 255));
-        Q12.setText("Q.10");
-        getContentPane().add(Q12, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 580, 40, 40));
-
         Q13.setBackground(new java.awt.Color(102, 102, 102));
         Q13.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 2, 24)); // NOI18N
         Q13.setForeground(new java.awt.Color(255, 255, 255));
@@ -446,1159 +514,1228 @@ public class PRODUCTOS  extends  javax.swing.JFrame  {
 
     private void INGRESARActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_INGRESARActionPerformed
         jButton2.setEnabled(true);
-    //movimiento del dinero
-        System.out.println("localizacion de la moneda"+MONEDA.getLocation());
-        System.out.println("LOCALIZACION DEL BILLETE"+EFECTIVO.getLocation());
-       // EFECTIVO.setLocation(650, 260);
-        
-       int INDICE=PRECIOS.getSelectedIndex();
-String no1=(String)PRECIOS.getSelectedItem();
-         conver=Integer.parseInt(no1); 
-  
+        //movimiento del dinero
+        System.out.println("localizacion de la moneda" + MONEDA.getLocation());
+        System.out.println("LOCALIZACION DEL BILLETE" + EFECTIVO.getLocation());
+        // EFECTIVO.setLocation(650, 260);
 
-  
-                 // IMPRIMIENDO LAS IMAGENES DE LAS MONEDAS
-      //LOCALIZACION PARA EL INGRESO DEL DINERO           
-if(((MONEDA.getX()>=651&& MONEDA.getX()<709)&& (MONEDA.getY()>=145&& MONEDA.getY()<=190))|| ((EFECTIVO.getX()>=669 && EFECTIVO.getX()<=681)&& (EFECTIVO.getY()>=105&&EFECTIVO.getY()<=139)))
-{
-     sumatoria=sumatoria+conver; 
-     if(conver==5&&contando<=3){
-       
-       contando=contando+1;
-       }
-     if(conver==5){
-       
-       prod=prod+1;
-       }
-     if(conver==1){
-     
-     monedaauxiliar=monedaauxiliar+1;
-     }
-    if(conver==1&& sumatoriamonedas<=5){
-    sumatoriamonedas=sumatoriamonedas+1;
-    
-    
-    //Q.1
-     if(sumatoriamonedas==1){
-    
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/automas/q1-1.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);
-                        
-    }
-     if(sumatoriamonedas==2){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/2.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }
-     if(sumatoriamonedas==3){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/3.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }
-     
-     if(PRECIOPRODUCTO!=8&&PRECIOPRODUCTO!=20){
-     if(sumatoriamonedas==4&&PRECIOPRODUCTO!=94&&PRECIOPRODUCTO!=20){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide19.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }
-     if(PRECIOPRODUCTO==5){
-      if(sumatoriamonedas==5){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/5.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }}
-     
-    }else  {MENSAJES.setText("SOLO PUEDES INGRESAR HASTA 3 FICHAS Y UN BILLETE DE A 5");}
-    }
-    
-    //----------------------------------------------------------------------------------------------------------------
-    
-   // ESTABLECIENDO RESTRICCIONES PARA EL INGRESO BILLETES DE A CINCO
-   
-    else if(conver==5 && PRECIOPRODUCTO==5 ){
-  
+        int INDICE = PRECIOS.getSelectedIndex();
+        String no1 = (String) PRECIOS.getSelectedItem();
+        conver = Integer.parseInt(no1);
 
-   ImageIcon automataa = new ImageIcon(getClass().getResource("/B5/1.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-}
-    
-    
-    else  if(conver==5&&PRECIOPRODUCTO==1){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/5-1/1.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    else if(conver==10&&PRECIOPRODUCTO==1){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-10/1.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    else if(conver==20&&PRECIOPRODUCTO==1){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-20/1.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    else if(conver==50&&PRECIOPRODUCTO==1){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-50/1.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-     
-    else if(conver==10&&PRECIOPRODUCTO==5){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D5-10/1.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    else if(conver==20&&PRECIOPRODUCTO==5){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D20-5L/4.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    else  if(conver==20&&PRECIOPRODUCTO==5&&auxiliar==1){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D20-5L/1.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    else  if(conver==50&&PRECIOPRODUCTO==5){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D50-5L/1.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    else  if(conver==50&&PRECIOPRODUCTO==5&&auxiliar==1){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D50-5L/1.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    
-    if(PRECIOPRODUCTO==8){
-      if(sumatoriamonedas==3&& conver==5&&PRECIOPRODUCTO!=9){
-       ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/1.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-       }
-    }
-     else  if(PRECIOPRODUCTO==10&&sumatoria<10&&conver==5){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/5-1/1.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-     if(conver==10&& PRECIOPRODUCTO==8){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/D810,1.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-     if(conver==20&& PRECIOPRODUCTO==8){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/D820.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-     if(conver==50&& PRECIOPRODUCTO==8){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/D850.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-     if(PRECIOPRODUCTO==9&&sumatoriamonedas==4&&conver==5&&sumatoria==9){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide67.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    
- 
-     else if(sumatoria==3&& conver==5){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/1.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }else if(PRECIOPRODUCTO==9&&sumatoria==4&& conver==5){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/1.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }else if(PRECIOPRODUCTO==9&&conver==10){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/D10,91.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }else if(PRECIOPRODUCTO==9&&conver==20){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D10/1.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    else if(PRECIOPRODUCTO==20&&conver==20){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide134.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    else if(PRECIOPRODUCTO==9&&conver==50){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide74.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-     else if(PRECIOPRODUCTO==12&&conver==10){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-10/1.Png"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-      else if(PRECIOPRODUCTO==12&&sumatoria==11){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide77.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-      else if(PRECIOPRODUCTO==12&&sumatoria==12){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide78.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    
-    if(PRECIOPRODUCTO==12&&sumatoria<12||PRECIOPRODUCTO==15){
-    
-    if(sumatoriamonedas==1){
-    
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/automas/q1-1.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);
-                        
-    }
-     if(sumatoriamonedas==2){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/2.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }
-     if(sumatoriamonedas==3){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/3.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }
-     if(sumatoriamonedas==4&&PRECIOPRODUCTO!=9){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide39.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }
-      if(sumatoriamonedas==5){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide40.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }
-     
-   if(sumatoria==10){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide81.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }
-   if(sumatoria==11){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide82.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }
-   if(sumatoria==12){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide8.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }
-    
-    
-   
-      if(PRECIOPRODUCTO==12&&sumatoria==15&&conver==5){
-      ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide86.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-      
-      }
-      
-      }
-    if(PRECIOPRODUCTO==10&&conver==10){
-       ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide102.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  }
-    if(PRECIOPRODUCTO==10&&conver==20){
-       ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide103.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  }
-     if(PRECIOPRODUCTO==10&&conver==50){
-       ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide105.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  }
-      
-      if(PRECIOPRODUCTO==15&&sumatoriamonedas==5&&sumatoria==15){
-      ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide107.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-      
-      }
-      if(PRECIOPRODUCTO==15&&sumatoriamonedas==0&&sumatoria==10){
-      ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-10/1.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-      
-      }
-      if(PRECIOPRODUCTO==15&&sumatoriamonedas==0&&conver==5&&sumatoria==15){
-      ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide112.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-      
-      }
-    if(PRECIOPRODUCTO==15&&sumatoriamonedas==0&&conver==5){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide44.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-    
-    }
-    if(PRECIOPRODUCTO==15&&sumatoriamonedas==0&&conver==5&&sumatoria==10){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide99.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-    
-    }
-    if(PRECIOPRODUCTO==15&&sumatoriamonedas==0&&conver==5&&sumatoria==15){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide99.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-    
-    }
-    if(PRECIOPRODUCTO==15&&conver==20){
-    
-     ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide118.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    if(PRECIOPRODUCTO==15&&conver==50){
-    
-     ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide120.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    
-    
-    
-    
-    if(PRECIOPRODUCTO==20&&sumatoriamonedas==4||sumatoriamonedas==5||sumatoriamonedas==0){
-        
-        if(sumatoriamonedas==4){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide19.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }
-      
-    if(sumatoriamonedas==5||PRECIOPRODUCTO==20){
-    
-     ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide20.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    if(sumatoriamonedas==5&&conver==5&&sumatoria==10){
-    
-     ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide81.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    if(sumatoriamonedas==5&&conver==5&&sumatoria==15){
-    
-     ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide86.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    if(sumatoriamonedas==5&&conver==5&&sumatoria==20){
-    
-     ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide122.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    if(sumatoriamonedas==5&&conver==5&&sumatoria==20){
-    
-     ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide122.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    
-     if(PRECIOPRODUCTO==20&&sumatoriamonedas==0&&sumatoria==10){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-10/1.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    if(PRECIOPRODUCTO==20&&sumatoriamonedas==0&&conver==5&&sumatoria==15){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide112.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    if(PRECIOPRODUCTO==20&&sumatoriamonedas==0&&conver==5&&sumatoria==20){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide127.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    
-    }
-    
-   
-    if(PRECIOPRODUCTO==20&&conver==5&&conver!=10&&conver!=20&&conver!=50){
-    if(PRECIOPRODUCTO==20&&sumatoriamonedas==0&&conver==5&&sumatoria==5){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/5-1/1.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    if(PRECIOPRODUCTO==20&&sumatoriamonedas==0&&conver==5&&sumatoria==10){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide99.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-     if(PRECIOPRODUCTO==20&&sumatoriamonedas==0&&conver==5&&sumatoria==15){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide115.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-     if(PRECIOPRODUCTO==20&&sumatoriamonedas==0&&conver==5&&sumatoria==20){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide130.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    }
-    if(PRECIOPRODUCTO==20&&conver==20){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide133.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    
-    }
-    if(PRECIOPRODUCTO==20&&conver==50){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide139.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    
-    }
-//    else if(conver==5 && sumatoriamonedas<=4 ){
-//  
-//   sumatoria=sumatoria+conver; 
-//}
-    //------------------------------------------------------------------------
-//    else if(conver==5 && sumatoriamonedas<=5 ){
-//  
-//   sumatoria=sumatoria+conver; 
-//}
-//   else if(conver==5 && sumatoria<=20 ){
-//  
-//   sumatoria=sumatoria+conver; 
-//} 
-//   
-//    else if(conver==10  ){
-//  
-//   sumatoria=sumatoria+conver; 
-//} 
-//    else if(conver==10 && sumatoriamonedas<=2 ){
-//  
-//   sumatoria=sumatoria+conver; 
-//} 
-//    else if(conver==5 && sumatoriamonedas<=2 ){
-//  
-//   sumatoria=sumatoria+conver; 
-//} 
-//     else if(conver==20 ||conver==20&&sumatoriamonedas<=1 ){
-//  
-//   sumatoria=sumatoria+conver; 
-//} 
-//      else if(conver==50  ){
-//  
-//   sumatoria=sumatoria+conver; 
-//} 
+        // IMPRIMIENDO LAS IMAGENES DE LAS MONEDAS
+        //LOCALIZACION PARA EL INGRESO DEL DINERO           
+        if (((MONEDA.getX() >= 651 && MONEDA.getX() < 709) && (MONEDA.getY() >= 145 && MONEDA.getY() <= 190)) || ((EFECTIVO.getX() >= 669 && EFECTIVO.getX() <= 681) && (EFECTIVO.getY() >= 105 && EFECTIVO.getY() <= 139))) {
+            sumatoria = sumatoria + conver;
+            if (conver == 5 && contando <= 3) {
 
- //---------------------------------------------------------------   
-    
-   else if(conver==1&&sumatoriamonedas==5){JOptionPane.showMessageDialog(null, "HAS EXCEDIDIDO DEL NUMERO MAXIMO DE MONEDAS A INGRESAR EL MAXIMO SON 5");}
- 
- 
-    
-    
-    
-    
-    
-    
-    
-  if(sumatoria<PRECIOPRODUCTO){
-       
-       JOptionPane.showMessageDialog(null, "El CREDITO ES INSUFICIENTE PARA OBTENER EL PRODUCTO AUN FALTAN "+(PRECIOPRODUCTO-sumatoria));
-       }
-       
-     
-       //Q.1
-       else  if(sumatoria>=PRECIOPRODUCTO) {
-       JOptionPane.showMessageDialog(null, "FELICIDADES SU PRODUCTO HA SIDO ACREDITADO");
-       
-       if(sumatoria==1){
-       ImageIcon automataa = new ImageIcon(getClass().getResource("/automas/q1-d.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);
-       }
-       
-       if(auxiliar==0){
-       if(sumatoriamonedas==5){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/7.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }}
-       else if(auxiliar==1){
-       if(sumatoriamonedas==5){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/7,1.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }}
-       // BILLETES
-       else if(conver==5&& PRECIOPRODUCTO==5){
-       ImageIcon automataa = new ImageIcon(getClass().getResource("/B5/2.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);
-       }
-       else if(conver==5&&PRECIOPRODUCTO==1){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/5-1/2.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-       
-       else  if(conver==10&&PRECIOPRODUCTO==1){
-    sumatoria=sumatoria+conver; 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-10/2.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-       else if(conver==20&&PRECIOPRODUCTO==1){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-20/2.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-       else if(conver==50&&PRECIOPRODUCTO==1){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-50/2.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-        
-       else  if(conver==10&&PRECIOPRODUCTO==5){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D5-10/2.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-       else if(conver==10&&PRECIOPRODUCTO==5&&auxiliar==1){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D5-10L/1.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-        else if(conver==5 && PRECIOPRODUCTO==5&& auxiliar==1 ){
-  
-   ImageIcon automataa = new ImageIcon(getClass().getResource("/D5-5L/2.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-}
-        else if(conver==20&&PRECIOPRODUCTO==5){
-    sumatoria=sumatoria+conver; 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D20-5L/5.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-        
-        else  if(conver==20&&PRECIOPRODUCTO==5&&auxiliar==1){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D20-5L/2.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-        else if(conver==50&&PRECIOPRODUCTO==5){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D50-5L/2.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-        
-        else  if(conver==50&&PRECIOPRODUCTO==5&&auxiliar==1){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D50-5L/4.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-       
-       
-       if(sumatoriamonedas==3&& conver==5){ 
-       ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/2.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-       }
-       else  if(conver==10&&PRECIOPRODUCTO==8){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/D810,.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-      
-        if(sumatoria==9){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/2.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }else if(PRECIOPRODUCTO==9&&conver==10){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/D10,92.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-      else if(PRECIOPRODUCTO==9&&conver==20){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D10/2.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-        else if(PRECIOPRODUCTO==9&&conver==50){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide75.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-        else if(PRECIOPRODUCTO==12&&sumatoria==12){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide84.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-        if(PRECIOPRODUCTO==12&&sumatoria==15&&conver==5){
-      ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide89.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-      
-      }
-        if(PRECIOPRODUCTO==12&&conver==20){
-        ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide94.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-        
-        }
-        if(PRECIOPRODUCTO==12&&conver==50){
-        ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide95.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-        
-        }
-        if(PRECIOPRODUCTO==10&&sumatoriamonedas==5&&sumatoria==10){
-        ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide97.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-        
-        }
-        if(PRECIOPRODUCTO==10&&conver==5&&sumatoria==5){
-        ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide3.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-        
-        }
-        if(PRECIOPRODUCTO==10&&conver==5&&sumatoria==10){
-        ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide99.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-        
-        }
-        if(PRECIOPRODUCTO==10&&conver==5&&sumatoria==10){
-        ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide100.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-        
-        }
-         if(PRECIOPRODUCTO==15&&sumatoriamonedas==5&&sumatoria==15){
-      ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide109.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-      
-      }
-      
-       if(PRECIOPRODUCTO==15&&sumatoriamonedas==0&&conver==5&&sumatoria==15){
-      ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide113.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-      
-      }
-       
-       
-       if(PRECIOPRODUCTO==15&&sumatoriamonedas==0&&conver==5&&sumatoria==15&&contando==3){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide116.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-    
-    }
-       
-       if(PRECIOPRODUCTO==20&&sumatoriamonedas==5&& sumatoria==20){
-       ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide123.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);
-       }
-       if(PRECIOPRODUCTO==9&&sumatoriamonedas==4&&conver==5&&sumatoria==9){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide68.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-       if(PRECIOPRODUCTO==20&&sumatoriamonedas==0&&conver==5&&sumatoria==20&&prod!=4){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide128.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-       if(PRECIOPRODUCTO==20&&conver==5&&prod==4){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide131.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    
-       
-    
-        if(sumatoria>=PRECIOPRODUCTO){
-          INGRESAR.setEnabled(false);
-        
-        
-        }
-      
-}
- 
+                contando = contando + 1;
+            }
+            if (conver == 5) {
 
+                prod = prod + 1;
+            }
+            if (conver == 1) {
 
-  
-}else{MENSAJES.setText("COLOQUE EL DINERO EN UNA POSICION DE INGRESO");}
-       
+                monedaauxiliar = monedaauxiliar + 1;
+            }
+            if (conver == 1 && sumatoriamonedas <= 5) {
+                sumatoriamonedas = sumatoriamonedas + 1;
+
+                //Q.1
+                if (sumatoriamonedas == 1) {
+
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/automas/q1-1.JPG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+
+                }
+                if (sumatoriamonedas == 2) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/2.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (sumatoriamonedas == 3) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/3.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+
+                if (PRECIOPRODUCTO != 8 && PRECIOPRODUCTO != 20) {
+                    if (sumatoriamonedas == 4 && PRECIOPRODUCTO != 94 && PRECIOPRODUCTO != 20) {
+                        ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide19.JPG"));
+                        automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                        AUTOMATA.setIcon(automataa);
+                    }
+                    if (PRECIOPRODUCTO == 5) {
+                        if (sumatoriamonedas == 5) {
+                            ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/5.PNG"));
+                            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                            AUTOMATA.setIcon(automataa);
+                        }
+                    }
+
+                } else {
+                    MENSAJES.setText("SOLO PUEDES INGRESAR HASTA 3 FICHAS Y UN BILLETE DE A 5");
+                }
+            } //----------------------------------------------------------------------------------------------------------------
+            // ESTABLECIENDO RESTRICCIONES PARA EL INGRESO BILLETES DE A CINCO
+            else if (conver == 5 && PRECIOPRODUCTO == 5) {
+
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/B5/1.PNG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (conver == 5 && PRECIOPRODUCTO == 1) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/5-1/1.PNG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (conver == 10 && PRECIOPRODUCTO == 1) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-10/1.PNG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (conver == 20 && PRECIOPRODUCTO == 1) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-20/1.PNG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (conver == 50 && PRECIOPRODUCTO == 1) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-50/1.PNG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (conver == 10 && PRECIOPRODUCTO == 5) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D5-10/1.JPG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (conver == 20 && PRECIOPRODUCTO == 5) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D20-5L/4.PNG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (conver == 20 && PRECIOPRODUCTO == 5 && auxiliar == 1) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D20-5L/1.PNG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (conver == 50 && PRECIOPRODUCTO == 5) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D50-5L/1.PNG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (conver == 50 && PRECIOPRODUCTO == 5 && auxiliar == 1) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D50-5L/1.PNG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            }
+
+            if (PRECIOPRODUCTO == 8) {
+                if (sumatoriamonedas == 3 && conver == 5 && PRECIOPRODUCTO != 9) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/1.JPG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+            } else if (PRECIOPRODUCTO == 10 && sumatoria < 10 && conver == 5) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/5-1/1.PNG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            }
+            if (conver == 10 && PRECIOPRODUCTO == 8) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/D810,1.JPG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            }
+            if (conver == 20 && PRECIOPRODUCTO == 8) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/D820.JPG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            }
+            if (conver == 50 && PRECIOPRODUCTO == 8) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/D850.JPG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            }
+            if (PRECIOPRODUCTO == 9 && sumatoriamonedas == 4 && conver == 5 && sumatoria == 9) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide67.JPG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (sumatoria == 3 && conver == 5) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/1.JPG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (PRECIOPRODUCTO == 9 && sumatoria == 4 && conver == 5) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/1.JPG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (PRECIOPRODUCTO == 9 && conver == 10) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/D10,91.JPG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (PRECIOPRODUCTO == 9 && conver == 20) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D10/1.JPG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (PRECIOPRODUCTO == 20 && conver == 20) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide134.JPG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (PRECIOPRODUCTO == 9 && conver == 50) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide74.JPG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (PRECIOPRODUCTO == 12 && conver == 10) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-10/1.Png"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (PRECIOPRODUCTO == 12 && sumatoria == 11) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide77.JPG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            } else if (PRECIOPRODUCTO == 12 && sumatoria == 12) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide78.JPG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            }
+
+            if (PRECIOPRODUCTO == 12 && sumatoria < 12 || PRECIOPRODUCTO == 15) {
+
+                if (sumatoriamonedas == 1) {
+
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/automas/q1-1.JPG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+
+                }
+                if (sumatoriamonedas == 2) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/2.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (sumatoriamonedas == 3) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/3.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (sumatoriamonedas == 4 && PRECIOPRODUCTO != 9) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide39.JPG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (sumatoriamonedas == 5) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide40.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+
+                if (sumatoria == 10) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide81.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (sumatoria == 11) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide82.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (sumatoria == 12) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide8.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+
+                if (PRECIOPRODUCTO == 12 && sumatoria == 15 && conver == 5) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide86.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+
+                }
+
+            }
+            if (PRECIOPRODUCTO == 10 && conver == 10) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide102.jpg"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            }
+            if (PRECIOPRODUCTO == 10 && conver == 20) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide103.jpg"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            }
+            if (PRECIOPRODUCTO == 10 && conver == 50) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide105.jpg"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            }
+
+            if (PRECIOPRODUCTO == 15 && sumatoriamonedas == 5 && sumatoria == 15) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide107.jpg"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+
+            }
+            if (PRECIOPRODUCTO == 15 && sumatoriamonedas == 0 && sumatoria == 10) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-10/1.PNG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+
+            }
+            if (PRECIOPRODUCTO == 15 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 15) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide112.jpg"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+
+            }
+            if (PRECIOPRODUCTO == 15 && sumatoriamonedas == 0 && conver == 5) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide44.jpg"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+
+            }
+            if (PRECIOPRODUCTO == 15 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 10) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide99.jpg"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+
+            }
+            if (PRECIOPRODUCTO == 15 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 15) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide99.jpg"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+
+            }
+            if (PRECIOPRODUCTO == 15 && conver == 20) {
+
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide118.jpg"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            }
+            if (PRECIOPRODUCTO == 15 && conver == 50) {
+
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide120.jpg"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            }
+
+            if (PRECIOPRODUCTO == 20 && sumatoriamonedas == 4 || sumatoriamonedas == 5 || sumatoriamonedas == 0) {
+
+                if (sumatoriamonedas == 4) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide19.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+
+                if (sumatoriamonedas == 5 || PRECIOPRODUCTO == 20) {
+
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide20.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (sumatoriamonedas == 5 && conver == 5 && sumatoria == 10) {
+
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide81.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (sumatoriamonedas == 5 && conver == 5 && sumatoria == 15) {
+
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide86.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (sumatoriamonedas == 5 && conver == 5 && sumatoria == 20) {
+
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide122.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (sumatoriamonedas == 5 && conver == 5 && sumatoria == 20) {
+
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide122.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+
+                if (PRECIOPRODUCTO == 20 && sumatoriamonedas == 0 && sumatoria == 10) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-10/1.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (PRECIOPRODUCTO == 20 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 15) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide112.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (PRECIOPRODUCTO == 20 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 20) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide127.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+
+            }
+
+            if (PRECIOPRODUCTO == 20 && conver == 5 && conver != 10 && conver != 20 && conver != 50) {
+                if (PRECIOPRODUCTO == 20 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 5) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/5-1/1.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (PRECIOPRODUCTO == 20 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 10) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide99.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (PRECIOPRODUCTO == 20 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 15) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide115.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (PRECIOPRODUCTO == 20 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 20) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide130.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+            }
+            if (PRECIOPRODUCTO == 20 && conver == 20) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide133.jpg"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+
+            }
+            if (PRECIOPRODUCTO == 20 && conver == 50) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide139.jpg"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+
+            } //    else if(conver==5 && sumatoriamonedas<=4 ){
+            //  
+            //   sumatoria=sumatoria+conver; 
+            //}
+            //------------------------------------------------------------------------
+            //    else if(conver==5 && sumatoriamonedas<=5 ){
+            //  
+            //   sumatoria=sumatoria+conver; 
+            //}
+            //   else if(conver==5 && sumatoria<=20 ){
+            //  
+            //   sumatoria=sumatoria+conver; 
+            //} 
+            //   
+            //    else if(conver==10  ){
+            //  
+            //   sumatoria=sumatoria+conver; 
+            //} 
+            //    else if(conver==10 && sumatoriamonedas<=2 ){
+            //  
+            //   sumatoria=sumatoria+conver; 
+            //} 
+            //    else if(conver==5 && sumatoriamonedas<=2 ){
+            //  
+            //   sumatoria=sumatoria+conver; 
+            //} 
+            //     else if(conver==20 ||conver==20&&sumatoriamonedas<=1 ){
+            //  
+            //   sumatoria=sumatoria+conver; 
+            //} 
+            //      else if(conver==50  ){
+            //  
+            //   sumatoria=sumatoria+conver; 
+            //} 
+            //---------------------------------------------------------------   
+            else if (conver == 1 && sumatoriamonedas == 5) {
+                JOptionPane.showMessageDialog(null, "HAS EXCEDIDIDO DEL NUMERO MAXIMO DE MONEDAS A INGRESAR EL MAXIMO SON 5");
+            }
+
+            if (sumatoria < PRECIOPRODUCTO) {
+
+                JOptionPane.showMessageDialog(null, "El CREDITO ES INSUFICIENTE PARA OBTENER EL PRODUCTO AUN FALTAN " + (PRECIOPRODUCTO - sumatoria));
+            } //Q.1
+            else if (sumatoria >= PRECIOPRODUCTO) {
+                JOptionPane.showMessageDialog(null, "FELICIDADES SU PRODUCTO HA SIDO ACREDITADO");
+
+                if (sumatoria == 1) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/automas/q1-d.JPG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+
+                if (auxiliar == 0) {
+                    if (sumatoriamonedas == 5) {
+                        ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/7.PNG"));
+                        automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                        AUTOMATA.setIcon(automataa);
+                    }
+                } else if (auxiliar == 1) {
+                    if (sumatoriamonedas == 5) {
+                        ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/7,1.JPG"));
+                        automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                        AUTOMATA.setIcon(automataa);
+                    }
+                } // BILLETES
+                else if (conver == 5 && PRECIOPRODUCTO == 5) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/B5/2.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (conver == 5 && PRECIOPRODUCTO == 1) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/5-1/2.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (conver == 10 && PRECIOPRODUCTO == 1) {
+                    sumatoria = sumatoria + conver;
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-10/2.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (conver == 20 && PRECIOPRODUCTO == 1) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-20/2.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (conver == 50 && PRECIOPRODUCTO == 1) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-50/2.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (conver == 10 && PRECIOPRODUCTO == 5) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D5-10/2.JPG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (conver == 10 && PRECIOPRODUCTO == 5 && auxiliar == 1) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D5-10L/1.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (conver == 5 && PRECIOPRODUCTO == 5 && auxiliar == 1) {
+
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D5-5L/2.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (conver == 20 && PRECIOPRODUCTO == 5) {
+                    sumatoria = sumatoria + conver;
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D20-5L/5.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (conver == 20 && PRECIOPRODUCTO == 5 && auxiliar == 1) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D20-5L/2.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (conver == 50 && PRECIOPRODUCTO == 5) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D50-5L/2.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (conver == 50 && PRECIOPRODUCTO == 5 && auxiliar == 1) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D50-5L/4.PNG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+
+                if (sumatoriamonedas == 3 && conver == 5) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/2.JPG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (conver == 10 && PRECIOPRODUCTO == 8) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/D810,.JPG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+
+                if (sumatoria == 9) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/2.JPG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (PRECIOPRODUCTO == 9 && conver == 10) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/D10,92.JPG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (PRECIOPRODUCTO == 9 && conver == 20) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D10/2.JPG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (PRECIOPRODUCTO == 9 && conver == 50) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide75.JPG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                } else if (PRECIOPRODUCTO == 12 && sumatoria == 12) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide84.JPG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (PRECIOPRODUCTO == 12 && sumatoria == 15 && conver == 5) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide89.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+
+                }
+                if (PRECIOPRODUCTO == 12 && conver == 20) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide94.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+
+                }
+                if (PRECIOPRODUCTO == 12 && conver == 50) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide95.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+
+                }
+                if (PRECIOPRODUCTO == 10 && sumatoriamonedas == 5 && sumatoria == 10) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide97.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+
+                }
+                if (PRECIOPRODUCTO == 10 && conver == 5 && sumatoria == 5) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide3.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+
+                }
+                if (PRECIOPRODUCTO == 10 && conver == 5 && sumatoria == 10) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide99.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+
+                }
+                if (PRECIOPRODUCTO == 10 && conver == 5 && sumatoria == 10) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide100.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+
+                }
+                if (PRECIOPRODUCTO == 15 && sumatoriamonedas == 5 && sumatoria == 15) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide109.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+
+                }
+
+                if (PRECIOPRODUCTO == 15 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 15) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide113.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+
+                }
+
+                if (PRECIOPRODUCTO == 15 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 15 && contando == 3) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide116.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+
+                }
+
+                if (PRECIOPRODUCTO == 20 && sumatoriamonedas == 5 && sumatoria == 20) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide123.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (PRECIOPRODUCTO == 9 && sumatoriamonedas == 4 && conver == 5 && sumatoria == 9) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide68.JPG"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (PRECIOPRODUCTO == 20 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 20 && prod != 4) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide128.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+                if (PRECIOPRODUCTO == 20 && conver == 5 && prod == 4) {
+                    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide131.jpg"));
+                    automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    AUTOMATA.setIcon(automataa);
+                }
+
+                if (sumatoria >= PRECIOPRODUCTO) {
+                    INGRESAR.setEnabled(false);
+
+                }
+
+            }
+
+        } else {
+            MENSAJES.setText("COLOQUE EL DINERO EN UNA POSICION DE INGRESO");
+        }
+
     }//GEN-LAST:event_INGRESARActionPerformed
 
     private void PRECIOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PRECIOSActionPerformed
-      
+
     }//GEN-LAST:event_PRECIOSActionPerformed
 
     private void EFECTIVOMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EFECTIVOMousePressed
-       int i=PRECIOS.getSelectedIndex();
+        int i = PRECIOS.getSelectedIndex();
 
-  
-  if(i==1){
-     
-     
- ImageIcon imagenn = new ImageIcon(getClass().getResource("/DINERO/1BILLETE.JPG"));
-                         imagenn=new ImageIcon(imagenn.getImage().getScaledInstance(EFECTIVO.getWidth(), EFECTIVO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                  EFECTIVO.setIcon(imagenn);
-                  
-                  ImageIcon imagenn1 = new ImageIcon(getClass().getResource("/DINERO/1Quetzal.PNG"));
-                         imagenn=new ImageIcon(imagenn1.getImage().getScaledInstance(MONEDA.getWidth(), MONEDA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                  MONEDA.setIcon(imagenn);
-               
- }
- 
-   
- 
- if(i==2){
- ImageIcon imagenn = new ImageIcon(getClass().getResource("/DINERO/5quetzales.PNG"));
-                         imagenn=new ImageIcon(imagenn.getImage().getScaledInstance(EFECTIVO.getWidth(), EFECTIVO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                  EFECTIVO.setIcon(imagenn);
- }
- 
- if(i==3){
- ImageIcon imagenn = new ImageIcon(getClass().getResource("/DINERO/10Quetzales.PNG"));
-                         imagenn=new ImageIcon(imagenn.getImage().getScaledInstance(EFECTIVO.getWidth(), EFECTIVO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                  EFECTIVO.setIcon(imagenn);
- }
- if(i==4){
- ImageIcon imagenn = new ImageIcon(getClass().getResource("/DINERO/20quetzales.JPG"));
-                         imagenn=new ImageIcon(imagenn.getImage().getScaledInstance(EFECTIVO.getWidth(), EFECTIVO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                  EFECTIVO.setIcon(imagenn);
- }
- if(i==5){
- ImageIcon imagenn = new ImageIcon(getClass().getResource("/DINERO/50quetzales.JPG"));
-                         imagenn=new ImageIcon(imagenn.getImage().getScaledInstance(EFECTIVO.getWidth(), EFECTIVO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                  EFECTIVO.setIcon(imagenn);
- }
- 
-  
+        if (i == 1) {
+
+            ImageIcon imagenn = new ImageIcon(getClass().getResource("/DINERO/1BILLETE.JPG"));
+            imagenn = new ImageIcon(imagenn.getImage().getScaledInstance(EFECTIVO.getWidth(), EFECTIVO.getHeight(), Image.SCALE_AREA_AVERAGING));
+            EFECTIVO.setIcon(imagenn);
+
+            ImageIcon imagenn1 = new ImageIcon(getClass().getResource("/DINERO/1Quetzal.PNG"));
+            imagenn = new ImageIcon(imagenn1.getImage().getScaledInstance(MONEDA.getWidth(), MONEDA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            MONEDA.setIcon(imagenn);
+
+        }
+
+        if (i == 2) {
+            ImageIcon imagenn = new ImageIcon(getClass().getResource("/DINERO/5quetzales.PNG"));
+            imagenn = new ImageIcon(imagenn.getImage().getScaledInstance(EFECTIVO.getWidth(), EFECTIVO.getHeight(), Image.SCALE_AREA_AVERAGING));
+            EFECTIVO.setIcon(imagenn);
+        }
+
+        if (i == 3) {
+            ImageIcon imagenn = new ImageIcon(getClass().getResource("/DINERO/10Quetzales.PNG"));
+            imagenn = new ImageIcon(imagenn.getImage().getScaledInstance(EFECTIVO.getWidth(), EFECTIVO.getHeight(), Image.SCALE_AREA_AVERAGING));
+            EFECTIVO.setIcon(imagenn);
+        }
+        if (i == 4) {
+            ImageIcon imagenn = new ImageIcon(getClass().getResource("/DINERO/20quetzales.JPG"));
+            imagenn = new ImageIcon(imagenn.getImage().getScaledInstance(EFECTIVO.getWidth(), EFECTIVO.getHeight(), Image.SCALE_AREA_AVERAGING));
+            EFECTIVO.setIcon(imagenn);
+        }
+        if (i == 5) {
+            ImageIcon imagenn = new ImageIcon(getClass().getResource("/DINERO/50quetzales.JPG"));
+            imagenn = new ImageIcon(imagenn.getImage().getScaledInstance(EFECTIVO.getWidth(), EFECTIVO.getHeight(), Image.SCALE_AREA_AVERAGING));
+            EFECTIVO.setIcon(imagenn);
+        }
+
+
     }//GEN-LAST:event_EFECTIVOMousePressed
 
     private void EFECTIVOMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EFECTIVOMouseDragged
-EFECTIVO.setLocation(EFECTIVO.getLocation().x + evt.getX() - EFECTIVO.getWidth() / 2, 
-        EFECTIVO.getLocation().y + evt.getY() - EFECTIVO.getHeight() / 2);        // TODO add your handling code here:
+        EFECTIVO.setLocation(EFECTIVO.getLocation().x + evt.getX() - EFECTIVO.getWidth() / 2,
+                EFECTIVO.getLocation().y + evt.getY() - EFECTIVO.getHeight() / 2);        // TODO add your handling code here:
     }//GEN-LAST:event_EFECTIVOMouseDragged
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-    jButton2.setEnabled(false);  
-      INGRESAR.setEnabled(true);
-      MENSAJES.setText("");
-   
+        jButton2.setEnabled(false);
+        INGRESAR.setEnabled(true);
+        MENSAJES.setText("");
 
-      PRECIOS.setSelectedIndex(0);
-  
-      sumatoria=0;
-      sumatoriamonedas=0;
-      
-                  EFECTIVO.setIcon(null);
-                  MONEDA.setIcon(null);
-                  ENTREGAPRODUCTO.setIcon(null);
-                  ImageIcon automataa = new ImageIcon(getClass().getResource("/automas/q1.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);
+        PRECIOS.setSelectedIndex(0);
 
-                  
-                 
+        sumatoria = 0;
+        sumatoriamonedas = 0;
+
+        EFECTIVO.setIcon(null);
+        MONEDA.setIcon(null);
+        ENTREGAPRODUCTO.setIcon(null);
+        ImageIcon automataa = new ImageIcon(getClass().getResource("/automas/q1.JPG"));
+        automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+        AUTOMATA.setIcon(automataa);
+
+
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void MONEDAMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MONEDAMouseDragged
-     MONEDA.setLocation(MONEDA.getLocation().x + evt.getX() - MONEDA.getWidth() / 2, 
-        MONEDA.getLocation().y + evt.getY() - MONEDA.getHeight() / 2);      // TODO add your handling code here:
+        MONEDA.setLocation(MONEDA.getLocation().x + evt.getX() - MONEDA.getWidth() / 2,
+                MONEDA.getLocation().y + evt.getY() - MONEDA.getHeight() / 2);      // TODO add your handling code here:
     }//GEN-LAST:event_MONEDAMouseDragged
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-if(sumatoria>=PRECIOPRODUCTO){
-        if(PRECIOPRODUCTO==5 && INDENTIFICADORPRODUCTO ==1){
-   ImageIcon imagen1 = new ImageIcon(getClass().getResource("/IMASH/1.PNG"));
-                         imagen1=new ImageIcon(imagen1.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         ENTREGAPRODUCTO.setIcon(imagen1);}
-if(PRECIOPRODUCTO==5 && INDENTIFICADORPRODUCTO ==2){
-                         //producto2
-                         ImageIcon imagen2 = new ImageIcon(getClass().getResource("/IMASH/2.PNG"));
-                         imagen2=new ImageIcon(imagen2.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         ENTREGAPRODUCTO.setIcon(imagen2);
-}
 
-if(PRECIOPRODUCTO==15 && INDENTIFICADORPRODUCTO ==3){
-ImageIcon imagen3 = new ImageIcon(getClass().getResource("/IMASH/3.PNG"));
-                         imagen3=new ImageIcon(imagen3.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         ENTREGAPRODUCTO.setIcon(imagen3);
-}
-if(PRECIOPRODUCTO==15 && INDENTIFICADORPRODUCTO ==4){
-                       //  PRODUCTO 4
-                        ImageIcon imagen4 = new ImageIcon(getClass().getResource("/IMASH/4.PNG"));
-                         imagen4=new ImageIcon(imagen4.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         ENTREGAPRODUCTO.setIcon(imagen4);
+        if (sumatoria >= PRECIOPRODUCTO) {
+            if (PRECIOPRODUCTO == 5 && INDENTIFICADORPRODUCTO == 1) {
+                String valor = precio.getText();
+                int suma = Integer.parseInt(valor);
+                int resultado = 0;
+                resultado = suma - 1;
+                precio.setText(resultado + "");
+                //producto12
+                if (suma == 0) {
+                    precio.setVisible(false);
+                    JOptionPane.showMessageDialog(null, "No existen productos ");
+                } else {
+                ImageIcon imagen1 = new ImageIcon(getClass().getResource("/IMASH/1.PNG"));
+                imagen1 = new ImageIcon(imagen1.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
+                ENTREGAPRODUCTO.setIcon(imagen1);
+                }
 
-}
+            }
 
-if(PRECIOPRODUCTO==25 && INDENTIFICADORPRODUCTO ==5){
-                         //  PRODUCTO 5
-                         ImageIcon imagen5 = new ImageIcon(getClass().getResource("/IMASH/5.PNG"));
-                         imagen5=new ImageIcon(imagen5.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                          ENTREGAPRODUCTO.setIcon(imagen5);
-}
+            if (PRECIOPRODUCTO == 5 && INDENTIFICADORPRODUCTO == 2) {
+                String valor = precio2.getText();
+                int suma = Integer.parseInt(valor);
+                int resultado = 0;
+                resultado = suma - 1;
+                precio2.setText(resultado + "");
+                //producto12
+                if (suma == 0) {
+                    precio2.setVisible(false);
+                    JOptionPane.showMessageDialog(null, "No existen productos ");
+                } else {
+                ImageIcon imagen2 = new ImageIcon(getClass().getResource("/IMASH/2.PNG"));
+                imagen2 = new ImageIcon(imagen2.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
+                ENTREGAPRODUCTO.setIcon(imagen2);
+                }
+                //producto2
 
-if(PRECIOPRODUCTO==25 && INDENTIFICADORPRODUCTO ==6){
-                         //  PRODUCTO 6
-                        ImageIcon imagen6 = new ImageIcon(getClass().getResource("/IMASH/6.PNG"));
-                         imagen6=new ImageIcon(imagen6.getImage().getScaledInstance( ENTREGAPRODUCTO.getWidth(),  ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                          ENTREGAPRODUCTO.setIcon(imagen6);
-}
+            }
 
-if(PRECIOPRODUCTO==35 && INDENTIFICADORPRODUCTO ==7){
-                         //  PRODUCTO 7
-                        ImageIcon imagen7 = new ImageIcon(getClass().getResource("/IMASH/7.PNG"));
-                         imagen7=new ImageIcon(imagen7.getImage().getScaledInstance( ENTREGAPRODUCTO.getWidth(),  ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                          ENTREGAPRODUCTO.setIcon(imagen7);
-}
-if(PRECIOPRODUCTO==35 && INDENTIFICADORPRODUCTO ==8){
-                          //  PRODUCTO 8
-                        ImageIcon imagen8 = new ImageIcon(getClass().getResource("/IMASH/8.PNG"));
-                         imagen8=new ImageIcon(imagen8.getImage().getScaledInstance( ENTREGAPRODUCTO.getWidth(),  ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                          ENTREGAPRODUCTO.setIcon(imagen8);
-}
-if(PRECIOPRODUCTO==45 && INDENTIFICADORPRODUCTO ==9){
-                         
-                         ImageIcon imagen9 = new ImageIcon(getClass().getResource("/IMASH/9.PNG"));
-                         imagen9=new ImageIcon(imagen9.getImage().getScaledInstance( ENTREGAPRODUCTO.getWidth(),  ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                   ENTREGAPRODUCTO.setIcon(imagen9);
+            if (PRECIOPRODUCTO == 15 && INDENTIFICADORPRODUCTO == 3) {
+                String valor = precio3.getText();
+                int suma = Integer.parseInt(valor);
+                int resultado = 0;
+                resultado = suma - 1;
+                precio3.setText(resultado + "");
+                //producto12
+                if (suma == 0) {
+                    precio3.setVisible(false);
+                    JOptionPane.showMessageDialog(null, "No existen productos ");
+                } else {
+                ImageIcon imagen3 = new ImageIcon(getClass().getResource("/IMASH/3.PNG"));
+                imagen3 = new ImageIcon(imagen3.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
+                ENTREGAPRODUCTO.setIcon(imagen3);
+                }
 
-}
-
-if(PRECIOPRODUCTO==45 && INDENTIFICADORPRODUCTO ==10){
-                          //  PRODUCTO 10
-                        ImageIcon imagen10 = new ImageIcon(getClass().getResource("/IMASH/10.PNG"));
-                         imagen10=new ImageIcon(imagen10.getImage().getScaledInstance( ENTREGAPRODUCTO.getWidth(),  ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                          ENTREGAPRODUCTO.setIcon(imagen10);
-}
-if(PRECIOPRODUCTO==45&& INDENTIFICADORPRODUCTO ==11){
-                         //producto11
-                         ImageIcon imagen11 = new ImageIcon(getClass().getResource("/IMASH/11.PNG"));
-                         imagen11=new ImageIcon(imagen11.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         ENTREGAPRODUCTO.setIcon(imagen11);
-}
-if(PRECIOPRODUCTO==45 && INDENTIFICADORPRODUCTO ==12){
-                         //producto12
-                         ImageIcon imagen12 = new ImageIcon(getClass().getResource("/IMASH/12.PNG"));
-                         imagen12=new ImageIcon(imagen12.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
-                         ENTREGAPRODUCTO.setIcon(imagen12);
-}
+            }
+            if (PRECIOPRODUCTO == 15 && INDENTIFICADORPRODUCTO == 4) {
+                String valor = precio4.getText();
+                int suma = Integer.parseInt(valor);
+                int resultado = 0;
+                resultado = suma - 1;
+                precio4.setText(resultado + "");
+                //producto12
+                if (suma == 0) {
+                    precio4.setVisible(false);
+                    JOptionPane.showMessageDialog(null, "No existen productos ");
+                } else {
+                ImageIcon imagen4 = new ImageIcon(getClass().getResource("/IMASH/4.PNG"));
+                imagen4 = new ImageIcon(imagen4.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
+                ENTREGAPRODUCTO.setIcon(imagen4);
+                }
 
 
-} else {JOptionPane.showMessageDialog(null, "no existen creditos suficientes para generar el producto solicitado");}
-       
-       
+            }
 
-            // TODO add your handling code here:
-        
-        
-        
-        
-        
-        if(sumatoriamonedas==1){
-       ImageIcon automataa = new ImageIcon(getClass().getResource("/automas/q1-E.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);
-       }
-        if(auxiliar==0&&sumatoriamonedas==5&&PRECIOPRODUCTO==5){
-        if(sumatoriamonedas==5&&PRECIOPRODUCTO==5){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/8.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }}
-        if(auxiliar==1){
-        if(sumatoriamonedas==5&&sumatoriamonedas==5){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/8,1.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);                   
-    }}
-        if(conver==5&& PRECIOPRODUCTO==5){
-       ImageIcon automataa = new ImageIcon(getClass().getResource("/B5/4.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);
-       }
-        
-        if(conver==5&&PRECIOPRODUCTO==1){
-    
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/5-1/3.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-        
-        if(conver==10&&PRECIOPRODUCTO==1){
-    
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-10/3.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-         if(conver==20&&PRECIOPRODUCTO==1){
-   
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-20/3.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-         if(conver==50&&PRECIOPRODUCTO==1){
-   
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-50/3.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-         if(conver==10&&PRECIOPRODUCTO==5){
-    
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D5-10/3.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-          else if(conver==5 && PRECIOPRODUCTO==5&& auxiliar==1 ){
-  
-   
-   ImageIcon automataa = new ImageIcon(getClass().getResource("/D5-5L/3.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-}
-         
-         if(conver==10&&PRECIOPRODUCTO==5&&auxiliar==1){
-    
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D5-10L/2.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-         if(conver==20&&PRECIOPRODUCTO==5){
-    
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D20-5L/6.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-         if(conver==20&&PRECIOPRODUCTO==5&&auxiliar==1){
-   
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D20-5L/3.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-          if(conver==50&&PRECIOPRODUCTO==5){
-   
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D50-5L/3.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-         if(conver==50&&PRECIOPRODUCTO==5&&auxiliar==1){
- 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D50-5L/5.PNG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-         if(sumatoriamonedas==3&& conver==5){
-       ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/3.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-       }
-          else  if(PRECIOPRODUCTO==10&&sumatoria==10&&conver==5){
-  
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/D85.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-         else  if(PRECIOPRODUCTO==8&&conver==10){
-   
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/D810,3.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-         if(PRECIOPRODUCTO==9&&conver!=20&&conver!=50){
-   
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/3.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }else 
-             if(PRECIOPRODUCTO==9&&conver==20){
-    
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D10/3.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-         else if(PRECIOPRODUCTO==9&&conver==50){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide76.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-         else if(PRECIOPRODUCTO==12&&sumatoria==12&&sumatoriamonedas!=5){ 
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide85.JPG"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-          if(PRECIOPRODUCTO==12&&sumatoria==15&&conver==5){
-      ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide87.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-      
-      }
-           if(PRECIOPRODUCTO==12&&conver==50){
-        ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide96.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-        
+            if (PRECIOPRODUCTO == 25 && INDENTIFICADORPRODUCTO == 5) {
+                String valor = precio5.getText();
+                int suma = Integer.parseInt(valor);
+                int resultado = 0;
+                resultado = suma - 1;
+                precio5.setText(resultado + "");
+                //producto12
+                if (suma == 0) {
+                    precio5.setVisible(false);
+                    JOptionPane.showMessageDialog(null, "No existen productos ");
+                } else {
+                ImageIcon imagen5 = new ImageIcon(getClass().getResource("/IMASH/5.PNG"));
+                imagen5 = new ImageIcon(imagen5.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
+                ENTREGAPRODUCTO.setIcon(imagen5);
+                }
+                //  PRODUCTO 5
+
+            }
+
+            if (PRECIOPRODUCTO == 25 && INDENTIFICADORPRODUCTO == 6) {
+                String valor = precio6.getText();
+                int suma = Integer.parseInt(valor);
+                int resultado = 0;
+                resultado = suma - 1;
+                precio6.setText(resultado + "");
+                //producto12
+                if (suma == 0) {
+                    precio6.setVisible(false);
+                    JOptionPane.showMessageDialog(null, "No existen productos ");
+                } else {
+                ImageIcon imagen6 = new ImageIcon(getClass().getResource("/IMASH/6.PNG"));
+                imagen6 = new ImageIcon(imagen6.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
+                ENTREGAPRODUCTO.setIcon(imagen6);
+                }
+                //  PRODUCTO 6
+
+            }
+
+            if (PRECIOPRODUCTO == 35 && INDENTIFICADORPRODUCTO == 7) {
+                String valor = precio7.getText();
+                int suma = Integer.parseInt(valor);
+                int resultado = 0;
+                resultado = suma - 1;
+                precio7.setText(resultado + "");
+                //producto12
+                if (suma == 0) {
+                    precio7.setVisible(false);
+                    JOptionPane.showMessageDialog(null, "No existen productos ");
+                } else {
+                ImageIcon imagen7 = new ImageIcon(getClass().getResource("/IMASH/7.PNG"));
+                imagen7 = new ImageIcon(imagen7.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
+                ENTREGAPRODUCTO.setIcon(imagen7);
+                }
+                //  PRODUCTO 7
+
+            }
+            if (PRECIOPRODUCTO == 35 && INDENTIFICADORPRODUCTO == 8) {
+                String valor = precio8.getText();
+                int suma = Integer.parseInt(valor);
+                int resultado = 0;
+                resultado = suma - 1;
+                precio8.setText(resultado + "");
+                //producto12
+                if (suma == 0) {
+                    precio8.setVisible(false);
+                    JOptionPane.showMessageDialog(null, "No existen productos ");
+                } else {
+                ImageIcon imagen8 = new ImageIcon(getClass().getResource("/IMASH/8.PNG"));
+                imagen8 = new ImageIcon(imagen8.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
+                ENTREGAPRODUCTO.setIcon(imagen8);
+                }
+                //  PRODUCTO 8
+
+            }
+            if (PRECIOPRODUCTO == 45 && INDENTIFICADORPRODUCTO == 9) {
+                String valor = precio9.getText();
+                int suma = Integer.parseInt(valor);
+                int resultado = 0;
+                resultado = suma - 1;
+                precio9.setText(resultado + "");
+                //producto12
+                if (suma == 0) {
+                    precio9.setVisible(false);
+                    JOptionPane.showMessageDialog(null, "No existen productos ");
+                } else {
+                ImageIcon imagen9 = new ImageIcon(getClass().getResource("/IMASH/9.PNG"));
+                imagen9 = new ImageIcon(imagen9.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
+                ENTREGAPRODUCTO.setIcon(imagen9);
+                }
+
+
+            }
+
+            if (PRECIOPRODUCTO == 45 && INDENTIFICADORPRODUCTO == 10) {
+                String valor = precio10.getText();
+                int suma = Integer.parseInt(valor);
+                int resultado = 0;
+                resultado = suma - 1;
+                precio10.setText(resultado + "");
+                //producto12
+                if (suma == 0) {
+                    precio10.setVisible(false);
+                    JOptionPane.showMessageDialog(null, "No existen productos ");
+                } else {
+                ImageIcon imagen10 = new ImageIcon(getClass().getResource("/IMASH/10.PNG"));
+                imagen10 = new ImageIcon(imagen10.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
+                ENTREGAPRODUCTO.setIcon(imagen10);
+                }
+                //  PRODUCTO 10
+
+            }
+            if (PRECIOPRODUCTO == 45 && INDENTIFICADORPRODUCTO == 11) {
+                String valor = precio11.getText();
+                int suma = Integer.parseInt(valor);
+                int resultado = 0;
+                resultado = suma - 1;
+                precio11.setText(resultado + "");
+                //producto12
+                if (suma == 0) {
+                    precio11.setVisible(false);
+                    JOptionPane.showMessageDialog(null, "No existen productos ");
+                } else {
+                ImageIcon imagen11 = new ImageIcon(getClass().getResource("/IMASH/11.PNG"));
+                imagen11 = new ImageIcon(imagen11.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
+                ENTREGAPRODUCTO.setIcon(imagen11);
+                }
+                //producto11
+
+            }
+            if (PRECIOPRODUCTO == 45 && INDENTIFICADORPRODUCTO == 12) {
+                String valor = precio12.getText();
+                int suma = Integer.parseInt(valor);
+                int resultado = 0;
+                resultado = suma - 1;
+                precio12.setText(resultado + "");
+                //producto12
+                if (suma == 0) {
+                    precio12.setVisible(false);
+                    JOptionPane.showMessageDialog(null, "No existen productos ");
+                } else {
+                    ImageIcon imagen12 = new ImageIcon(getClass().getResource("/IMASH/12.PNG"));
+                    imagen12 = new ImageIcon(imagen12.getImage().getScaledInstance(ENTREGAPRODUCTO.getWidth(), ENTREGAPRODUCTO.getHeight(), Image.SCALE_AREA_AVERAGING));
+                    ENTREGAPRODUCTO.setIcon(imagen12);
+                }
+
+            }
+
+        } else {
+            JOptionPane.showMessageDialog(null, "no existen creditos suficientes para generar el producto solicitado");
         }
-           if(PRECIOPRODUCTO==10&&sumatoriamonedas==5&&conver==5){
-        ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide98.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-        
+
+        // TODO add your handling code here:
+        if (sumatoriamonedas == 1) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/automas/q1-E.JPG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
         }
-           if(PRECIOPRODUCTO==10&&conver==5&&sumatoria==10){
-        ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide101.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-        
+        if (auxiliar == 0 && sumatoriamonedas == 5 && PRECIOPRODUCTO == 5) {
+            if (sumatoriamonedas == 5 && PRECIOPRODUCTO == 5) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/8.PNG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            }
         }
-           if(PRECIOPRODUCTO==10&&conver==20){
-       ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide104.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  }
-      
-      if(PRECIOPRODUCTO==10&&conver==50){
-       ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide106.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  }
-      
-      if(PRECIOPRODUCTO==15&&sumatoriamonedas==5&&sumatoria==15){
-      ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide109.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-      
-      }
-      
-      if(PRECIOPRODUCTO==15&&sumatoriamonedas==0&&conver==5&&sumatoria==15&&PRECIOPRODUCTO!=5){
-      ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide114.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-      
-      }
-      if(PRECIOPRODUCTO==15&&sumatoriamonedas==0&&conver==5&&sumatoria==15&&contando==3){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide117.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);  
-    
-    }
-      if(PRECIOPRODUCTO==15&&conver==20){
-    
-     ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide119.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-      
-     if(PRECIOPRODUCTO==15&&conver==50){
-    
-     ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide121.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-     if(PRECIOPRODUCTO==20&&sumatoriamonedas==4||sumatoriamonedas==5&&PRECIOPRODUCTO!=5&&PRECIOPRODUCTO!=10){
-       ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide124.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);
-       }
-    if(PRECIOPRODUCTO==10&&sumatoriamonedas==5&&sumatoria==10){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide98.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa);
-    }
-    if(PRECIOPRODUCTO==20&&sumatoriamonedas==0&&conver==5&&sumatoria==20&&prod!=4){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide129.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-    
-     if(PRECIOPRODUCTO==20&&prod==4){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide132.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    }
-     if(PRECIOPRODUCTO==20&&conver==20){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide134.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    
-    }
-    if(PRECIOPRODUCTO==20&&conver==50){
-    ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide139.jpg"));
-                         automataa=new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
-                 AUTOMATA.setIcon(automataa); 
-    
-    }
-     
-    MENSAJES.setText("SU CAMBIO ES >>>> "+(sumatoria-PRECIOPRODUCTO));
+        if (auxiliar == 1) {
+            if (sumatoriamonedas == 5 && sumatoriamonedas == 5) {
+                ImageIcon automataa = new ImageIcon(getClass().getResource("/Q1,5/8,1.JPG"));
+                automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+                AUTOMATA.setIcon(automataa);
+            }
+        }
+        if (conver == 5 && PRECIOPRODUCTO == 5) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/B5/4.PNG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+
+        if (conver == 5 && PRECIOPRODUCTO == 1) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/5-1/3.PNG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+
+        if (conver == 10 && PRECIOPRODUCTO == 1) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-10/3.PNG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+        if (conver == 20 && PRECIOPRODUCTO == 1) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-20/3.PNG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+        if (conver == 50 && PRECIOPRODUCTO == 1) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/B1-50/3.PNG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+        if (conver == 10 && PRECIOPRODUCTO == 5) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D5-10/3.JPG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        } else if (conver == 5 && PRECIOPRODUCTO == 5 && auxiliar == 1) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D5-5L/3.PNG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+
+        if (conver == 10 && PRECIOPRODUCTO == 5 && auxiliar == 1) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D5-10L/2.PNG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+        if (conver == 20 && PRECIOPRODUCTO == 5) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D20-5L/6.PNG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+        if (conver == 20 && PRECIOPRODUCTO == 5 && auxiliar == 1) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D20-5L/3.PNG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+        if (conver == 50 && PRECIOPRODUCTO == 5) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D50-5L/3.PNG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+        if (conver == 50 && PRECIOPRODUCTO == 5 && auxiliar == 1) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D50-5L/5.PNG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+        if (sumatoriamonedas == 3 && conver == 5) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/3.JPG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        } else if (PRECIOPRODUCTO == 10 && sumatoria == 10 && conver == 5) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/D85.JPG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        } else if (PRECIOPRODUCTO == 8 && conver == 10) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D8/D810,3.JPG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+        if (PRECIOPRODUCTO == 9 && conver != 20 && conver != 50) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/3.JPG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        } else if (PRECIOPRODUCTO == 9 && conver == 20) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D10/3.JPG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        } else if (PRECIOPRODUCTO == 9 && conver == 50) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide76.JPG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        } else if (PRECIOPRODUCTO == 12 && sumatoria == 12 && sumatoriamonedas != 5) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide85.JPG"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+        if (PRECIOPRODUCTO == 12 && sumatoria == 15 && conver == 5) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide87.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+
+        }
+        if (PRECIOPRODUCTO == 12 && conver == 50) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide96.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+
+        }
+        if (PRECIOPRODUCTO == 10 && sumatoriamonedas == 5 && conver == 5) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide98.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+
+        }
+        if (PRECIOPRODUCTO == 10 && conver == 5 && sumatoria == 10) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide101.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+
+        }
+        if (PRECIOPRODUCTO == 10 && conver == 20) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide104.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+
+        if (PRECIOPRODUCTO == 10 && conver == 50) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide106.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+
+        if (PRECIOPRODUCTO == 15 && sumatoriamonedas == 5 && sumatoria == 15) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide109.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+
+        }
+
+        if (PRECIOPRODUCTO == 15 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 15 && PRECIOPRODUCTO != 5) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide114.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+
+        }
+        if (PRECIOPRODUCTO == 15 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 15 && contando == 3) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide117.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+
+        }
+        if (PRECIOPRODUCTO == 15 && conver == 20) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide119.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+
+        if (PRECIOPRODUCTO == 15 && conver == 50) {
+
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide121.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+        if (PRECIOPRODUCTO == 20 && sumatoriamonedas == 4 || sumatoriamonedas == 5 && PRECIOPRODUCTO != 5 && PRECIOPRODUCTO != 10) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide124.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+        if (PRECIOPRODUCTO == 10 && sumatoriamonedas == 5 && sumatoria == 10) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide98.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+        if (PRECIOPRODUCTO == 20 && sumatoriamonedas == 0 && conver == 5 && sumatoria == 20 && prod != 4) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide129.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+
+        if (PRECIOPRODUCTO == 20 && prod == 4) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide132.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+        }
+        if (PRECIOPRODUCTO == 20 && conver == 20) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide134.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+
+        }
+        if (PRECIOPRODUCTO == 20 && conver == 50) {
+            ImageIcon automataa = new ImageIcon(getClass().getResource("/D9/Slide139.jpg"));
+            automataa = new ImageIcon(automataa.getImage().getScaledInstance(AUTOMATA.getWidth(), AUTOMATA.getHeight(), Image.SCALE_AREA_AVERAGING));
+            AUTOMATA.setIcon(automataa);
+
+        }
+
+        MENSAJES.setText("SU CAMBIO ES >>>> " + (sumatoria - PRECIOPRODUCTO));
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void PROD9UMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD9UMousePressed
-INDENTIFICADORPRODUCTO = 9;
-        PRECIOPRODUCTO=5; 
-auxiliar=1;
+        INDENTIFICADORPRODUCTO = 9;
+        TOTALPROD9 = 5;
+        PRECIOPRODUCTO = 5;
+        auxiliar = 1;
 // TODO add your handling code here:
-       
-        MENSAJES.setText("HAS SELECCIONADO MAJIN BOO ".trim());       
+
+        MENSAJES.setText("HAS SELECCIONADO MAJIN BOO ".trim());
     }//GEN-LAST:event_PROD9UMousePressed
 
     private void PROD8MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD8MousePressed
-              // TODO add your handling code here:
+        // TODO add your handling code here:
     }//GEN-LAST:event_PROD8MousePressed
 
     private void PROD7MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD7MousePressed
         INDENTIFICADORPRODUCTO = 7;
-        PRECIOPRODUCTO=35; 
-           MENSAJES.setText("HAS SELECCIONADO SHENLOG ".trim());// TODO add your handling code here:
+        TOTALPROD7 = 5;
+        PRECIOPRODUCTO = 35;
+        MENSAJES.setText("HAS SELECCIONADO SHENLOG ".trim());// TODO add your handling code here:
     }//GEN-LAST:event_PROD7MousePressed
 
     private void PROD6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD6MousePressed
         INDENTIFICADORPRODUCTO = 6;
-        PRECIOPRODUCTO=25;
- MENSAJES.setText("HAS SELECCIONADO GOKU SUPER SAYAJIN ".trim());// TODO add your handling code here:
+        TOTALPROD6 = 5;
+        PRECIOPRODUCTO = 25;
+        MENSAJES.setText("HAS SELECCIONADO GOKU SUPER SAYAJIN ".trim());// TODO add your handling code here:
     }//GEN-LAST:event_PROD6MousePressed
 
     private void PROD5MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD5MousePressed
         INDENTIFICADORPRODUCTO = 5;
-        PRECIOPRODUCTO=25; 
-           MENSAJES.setText("HAS SELECCIONADO AL MAESTRO KARIN ".trim());// TODO add your handling code here:
-          
+        TOTALPROD5 = 5;
+        PRECIOPRODUCTO = 25;
+        MENSAJES.setText("HAS SELECCIONADO AL MAESTRO KARIN ".trim());// TODO add your handling code here:
+
     }//GEN-LAST:event_PROD5MousePressed
 
     private void PROD4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD4MousePressed
         INDENTIFICADORPRODUCTO = 4;
-        PRECIOPRODUCTO= 15;  
-         MENSAJES.setText("HAS SELECCIONADO A PICCOLO".trim());// TODO add your handling code here:
-      
+        TOTALPROD4 = 5;
+        PRECIOPRODUCTO = 15;
+        MENSAJES.setText("HAS SELECCIONADO A PICCOLO".trim());// TODO add your handling code here:
+
     }//GEN-LAST:event_PROD4MousePressed
 
     private void PROD3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD3MousePressed
         INDENTIFICADORPRODUCTO = 3;
-        PRECIOPRODUCTO= 15; 
-           MENSAJES.setText("HAS SELECCIONADO A GOHAN ".trim());// TODO add your handling code here:
+        TOTALPROD3 = 5;
+        PRECIOPRODUCTO = 15;
+        MENSAJES.setText("HAS SELECCIONADO A GOHAN ".trim());// TODO add your handling code here:
     }//GEN-LAST:event_PROD3MousePressed
 
     private void PRODMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PRODMousePressed
         INDENTIFICADORPRODUCTO = 1;
-        PRECIOPRODUCTO=5;
-           MENSAJES.setText("HAS SELECCIONADO MISTER SATAN ".trim());
+        TOTALPROD1 = 5;
+        PRECIOPRODUCTO = 5;
+        MENSAJES.setText("HAS SELECCIONADO MISTER SATAN ".trim());
     }//GEN-LAST:event_PRODMousePressed
 
     private void PRODMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PRODMouseClicked
@@ -1608,26 +1745,30 @@ auxiliar=1;
 
     private void PROD2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD2MousePressed
         INDENTIFICADORPRODUCTO = 2;
-        PRECIOPRODUCTO=5;  
-           MENSAJES.setText("HAS SELECCIONADO GOTEN ".trim());// TODO add your handling code here:
+        TOTALPROD2 = 5;
+        PRECIOPRODUCTO = 5;
+        MENSAJES.setText("HAS SELECCIONADO GOTEN ".trim());// TODO add your handling code here:
     }//GEN-LAST:event_PROD2MousePressed
 
     private void PROD8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD8MouseClicked
         INDENTIFICADORPRODUCTO = 8;
-        PRECIOPRODUCTO=35;  
-           MENSAJES.setText("HAS SELECCIONADO TRUNKS ".trim()); // TODO add your handling code here:
+        TOTALPROD8 = 5;
+        PRECIOPRODUCTO = 35;
+        MENSAJES.setText("HAS SELECCIONADO TRUNKS ".trim()); // TODO add your handling code here:
     }//GEN-LAST:event_PROD8MouseClicked
 
     private void PROD9UMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD9UMouseClicked
-        INDENTIFICADORPRODUCTO = 9; 
-        PRECIOPRODUCTO=35;  
-           MENSAJES.setText("HAS SELECCIONADO MAJIN BOO ".trim());
+        INDENTIFICADORPRODUCTO = 9;
+        TOTALPROD9 = 5;
+        PRECIOPRODUCTO = 35;
+        MENSAJES.setText("HAS SELECCIONADO MAJIN BOO ".trim());
     }//GEN-LAST:event_PROD9UMouseClicked
 
     private void PROD10UMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD10UMouseClicked
-       INDENTIFICADORPRODUCTO = 10;
-        PRECIOPRODUCTO=45;  
-           MENSAJES.setText("HAS SELECCIONADO VEGUETA ".trim()); // TODO add your handling code here:
+        INDENTIFICADORPRODUCTO = 10;
+        TOTALPROD10 = 5;
+        PRECIOPRODUCTO = 45;
+        MENSAJES.setText("HAS SELECCIONADO VEGUETA ".trim()); // TODO add your handling code here:
     }//GEN-LAST:event_PROD10UMouseClicked
 
     private void PROD10UMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD10UMousePressed
@@ -1635,31 +1776,33 @@ auxiliar=1;
     }//GEN-LAST:event_PROD10UMousePressed
 
     private void PROD11UMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD11UMouseClicked
-       INDENTIFICADORPRODUCTO = 11;
-        PRECIOPRODUCTO=45;  
-           MENSAJES.setText("HAS SELECCIONADO FREEZER ".trim()); // TODO add your handling code here:
+        INDENTIFICADORPRODUCTO = 11;
+        TOTALPROD11 = 5;
+        PRECIOPRODUCTO = 45;
+        MENSAJES.setText("HAS SELECCIONADO FREEZER ".trim()); // TODO add your handling code here:
     }//GEN-LAST:event_PROD11UMouseClicked
 
     private void PROD11UMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD11UMousePressed
-         INDENTIFICADORPRODUCTO = 11;
-        PRECIOPRODUCTO=45;  
-           MENSAJES.setText("HAS SELECCIONADO FREEZER ".trim());// TODO add your handling code here:
+        INDENTIFICADORPRODUCTO = 11;
+        TOTALPROD11 = 5;
+        PRECIOPRODUCTO = 45;
+        MENSAJES.setText("HAS SELECCIONADO FREEZER ".trim());// TODO add your handling code here:
     }//GEN-LAST:event_PROD11UMousePressed
 
     private void PROD12UMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD12UMouseClicked
         INDENTIFICADORPRODUCTO = 12;
-        PRECIOPRODUCTO=45;  
-           MENSAJES.setText("HAS SELECCIONADO GOKU ".trim());   // TODO add your handling code here:
+        TOTALPROD12 = 5;
+        PRECIOPRODUCTO = 45;
+        MENSAJES.setText("HAS SELECCIONADO GOKU ".trim());   // TODO add your handling code here:
     }//GEN-LAST:event_PROD12UMouseClicked
 
     private void PROD12UMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PROD12UMousePressed
         INDENTIFICADORPRODUCTO = 12;
-        PRECIOPRODUCTO=45;  
-           MENSAJES.setText("HAS SELECCIONADO GOKU ".trim());   // TODO add your handling code here:
+        TOTALPROD12 = 5;
+        PRECIOPRODUCTO = 45;
+        MENSAJES.setText("HAS SELECCIONADO GOKU ".trim());   // TODO add your handling code here:
     }//GEN-LAST:event_PROD12UMousePressed
 
-    
-   
     /**
      * @param args the command line arguments
      */
@@ -1677,13 +1820,13 @@ auxiliar=1;
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MIRA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PRODUCTOS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MIRA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PRODUCTOS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MIRA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PRODUCTOS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MIRA.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(PRODUCTOS.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -1716,7 +1859,6 @@ auxiliar=1;
     private javax.swing.JLabel PROD9U;
     private javax.swing.JLabel Q1;
     private javax.swing.JLabel Q11;
-    private javax.swing.JLabel Q12;
     private javax.swing.JLabel Q13;
     private javax.swing.JLabel Q14;
     private javax.swing.JLabel Q15;
@@ -1734,5 +1876,17 @@ auxiliar=1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel precio;
+    private javax.swing.JLabel precio10;
+    private javax.swing.JLabel precio11;
+    private javax.swing.JLabel precio12;
+    private javax.swing.JLabel precio2;
+    private javax.swing.JLabel precio3;
+    private javax.swing.JLabel precio4;
+    private javax.swing.JLabel precio5;
+    private javax.swing.JLabel precio6;
+    private javax.swing.JLabel precio7;
+    private javax.swing.JLabel precio8;
+    private javax.swing.JLabel precio9;
     // End of variables declaration//GEN-END:variables
 }
